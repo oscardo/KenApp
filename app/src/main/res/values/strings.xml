@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">KenApp</string>
+    <string name="Egresos">Egreso</string>
+    <string name="Ingresos">Ingresos</string>
+    <string name="title_activity_egreso">Egreso</string>
+    <string name="title_activity_ingreso">Ingreso</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Concepto">Concepto</string>
+
+    <string name="exito_operacion">Exito en la operación</string>
+    <string name="no_exito_operacion">No ha salido algo bien! debes revisar que ha pasado!!!</string>
+    <string name="no_llenado_formulario">hace falta uno de los campos del formulario</string>
+    <string name="Configuracion">Configuración</string>
+    <string name="Listar_Egreso">Listar Egresos</string>
+    <string name="Actualizar_Egresos">Actualizar Egresos</string>
+    <string name="Eliminar_Egresos">Eliminar Egresos</string>
+    <string name="Listar_Ingresos">Listar Ingresos</string>
+    <string name="Actualizar_Ingresos">Actualizar Ingresos</string>
+    <string name="Eliminar_Ingresos">Eliminar Ingresos</string>
+    <string name="Listar_Logs">Listar Logs</string>
+    <string name="Balance">Balance</string>
+    <string name="Balance_Mensual">Balance Mensual</string>
+    <string name="Listar_Egresos">Listar Egresos</string>
+    <string name="actualiza">ACTUALIZAR</string>
+    <string name="Actualiza_egreso">Actualiza Egreso</string>
+    <string name="Valor">Valor</string>
+
+    <string name="Actualiza_egreso_faltaRadio">Hace falta elegir algún concepto</string>
+    <string name="Actualiza_ingreso_faltaRadio">Hace falta elegir algún concepto</string>
+    <string name="Actualiza_error_Ingreso">Error en el proceso de actualizar el ingreso</string>
+    <string name="Actualiza_error_Egreso">Error en el proceso de actualizar el egreso</string>
+    <string name="Ver_Balance">Ver Balance Mensual</string>
+    <string name="Balance_Diario">Balance Diarío</string>
+    <string name="Ver_Egresos">Ver Egreso</string>
+    <string name="Ver_Ingresos">Ver Ingresos</string>
+    <string name="Sobre">Sobre ...</string>
+</resources>

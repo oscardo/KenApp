@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Egreso"
+    tools:showIn="@layout/activity_egreso">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RL_fondo"
+        android:layout_marginTop="15dp"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ti_concepto"
+            >
+            <EditText
+                android:id="@+id/et_concepto"
+                android:layout_width="match_parent"
+                android:inputType="textAutoComplete"
+                android:layout_height="wrap_content"
+                android:hint="@string/Concepto"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/margen_izquierda"
+                android:layout_marginRight="@dimen/margen_derecha"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_concepto"
+            android:id="@+id/ti_valor" >
+            <EditText
+                android:id="@+id/et_egreso"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="@string/Egresos"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/margen_izquierda"
+                android:layout_marginRight="@dimen/margen_derecha"
+                android:layout_marginTop="160dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:background="@drawable/botones"
+            android:id="@+id/btn_IngresarEgreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/egress"
+            android:text="@string/Egresos"
+            android:layout_marginLeft="@dimen/margen_izquierda"
+            android:layout_marginRight="@dimen/margen_derecha"
+            android:layout_below="@id/ti_valor"
+            android:onClick="Evaluar"
+            />
+
+        <TextView
+            android:id="@+id/tv_mensaje"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/margen_izquierda"
+            android:layout_marginRight="@dimen/margen_derecha"
+            android:layout_below="@id/btn_IngresarEgreso"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>

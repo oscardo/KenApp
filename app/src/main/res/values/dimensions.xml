@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_marginLeft">50dp</dimen>
+    <dimen name="layout_marginRight">50dp</dimen>
+    <dimen name="padding">35dp</dimen>
+    <dimen name="textSize_inicio">18dp</dimen>
+</resources>

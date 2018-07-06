@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/layout_marginLeft_balance"
+    android:layout_marginRight="@dimen/layout_marginRight_balance"
+    android:layout_marginTop="10dp"
+    tools:context=".Actualizar_Egreso">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_labelDia"
+                android:text="Día"
+                />
+
+            <Spinner
+                android:id="@+id/sp_dias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_labelDia"
+                android:entries="@array/dia_array"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_labelMes"
+                android:layout_below="@id/sp_dias"
+                android:text="Mes"
+                />
+
+            <Spinner
+                android:id="@+id/sp_Mes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_labelMes"
+                android:entries="@array/meses_array"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_labelAnnio"
+                android:layout_below="@id/sp_Mes"
+                android:text="Mes"
+                />
+
+            <Spinner
+                android:id="@+id/sp_Annio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_labelAnnio"
+                android:entries="@array/annio_array"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_Annio"
+                android:id="@+id/btn_Balance"
+                android:background="@drawable/botones"
+                android:text="@string/Actualizar_Egresos"
+                android:onClick="Actualizar_Egresos"
+                />
+
+    <RadioGroup
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Balance"
+        android:id="@+id/rb_datos">
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rb_datos"
+        android:id="@+id/btn_Actualiza_egreso"
+        android:background="@drawable/botones"
+        android:text="@string/Actualiza_egreso"
+        android:visibility="invisible"
+        android:onClick="Actualiza_Egreso"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Concepto"
+            android:id="@+id/tv_concepto"
+            android:layout_below="@id/btn_Actualiza_egreso"
+            android:visibility="invisible"
+            android:textAlignment="center"
+
+            />
+
+        <EditText
+            android:layout_below="@id/tv_concepto"
+            android:id="@+id/et_actual_concepto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/margen_izquierda"
+            android:layout_marginRight="@dimen/margen_derecha"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Valor"
+            android:id="@+id/tv_actual_valor"
+            android:layout_below="@+id/et_actual_concepto"
+            android:visibility="invisible"
+            android:textAlignment="center"
+        />
+
+        <EditText
+            android:layout_below="@+id/tv_actual_valor"
+            android:id="@+id/et_actual_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Valor"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/margen_izquierda"
+            android:layout_marginRight="@dimen/margen_derecha"
+            android:visibility="invisible"
+            />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_fin_proceso_actualiza"
+        android:layout_below="@id/et_actual_valor"
+        tools:ignore="NotSibling"
+        android:background="@drawable/botones"
+        android:text="@string/actualiza"
+        android:visibility="invisible"
+        android:onClick="Actualizar"
+        />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

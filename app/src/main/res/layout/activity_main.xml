@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorFondo">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ingresos"
+            android:drawableLeft="@drawable/income"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/padding"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:textStyle="bold"
+            android:onClick="Ingreso"
+            />
+
+        <Button
+            android:id="@+id/btn_Egreso"
+            android:drawableLeft="@drawable/egress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:padding="@dimen/padding"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:text="@string/Egresos"
+            android:textStyle="bold"
+            android:onClick="Egreso"
+            >
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Balance"
+            android:drawableLeft="@drawable/balance"
+            android:layout_marginTop="240dp"
+            android:padding="@dimen/padding"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:textStyle="bold"
+            android:onClick="Balance"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Configuracion"
+            android:drawableLeft="@drawable/configuracion"
+            android:layout_marginTop="350dp"
+            android:padding="@dimen/padding"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:textStyle="bold"
+            android:onClick="Configuracion"
+            />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

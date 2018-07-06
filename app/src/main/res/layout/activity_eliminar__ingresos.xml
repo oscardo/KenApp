@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eliminar_Ingresos"
+    android:layout_marginLeft="@dimen/layout_marginLeft_balance"
+    android:layout_marginRight="@dimen/layout_marginRight_balance"
+    android:layout_marginTop="10dp"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_labelDia"
+                android:text="Día"
+                />
+
+            <Spinner
+                android:id="@+id/sp_dias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_labelDia"
+                android:entries="@array/dia_array"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_labelMes"
+                android:layout_below="@id/sp_dias"
+                android:text="Mes"
+                />
+
+            <Spinner
+                android:id="@+id/sp_Mes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_labelMes"
+                android:entries="@array/meses_array"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_labelAnnio"
+                android:layout_below="@id/sp_Mes"
+                android:text="Mes"
+                />
+
+            <Spinner
+                android:id="@+id/sp_Annio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_labelAnnio"
+                android:entries="@array/annio_array"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:background="@drawable/botones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_Annio"
+                android:id="@+id/btn_Balance"
+                android:text="@string/Ver_Ingresos"
+                android:onClick="Eliminar_Ingresos"
+                />
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_Balance"
+                android:id="@+id/rb_datos">
+            </RadioGroup>
+
+            <Button
+                android:background="@drawable/botones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_fin_proceso_actualiza"
+                android:layout_below="@id/rb_datos"
+                tools:ignore="NotSibling"
+                android:text="@string/Eliminar_Egresos"
+                android:visibility="invisible"
+                android:onClick="Eliminar"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

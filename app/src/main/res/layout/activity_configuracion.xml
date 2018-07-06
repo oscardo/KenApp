@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Configuracion"
+    android:background="@color/colorFondo"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <GridLayout
+        android:layout_width="376dp"
+        android:layout_height="800dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:columnCount="1"
+        >
+
+            <!-- android:background="@color/colorPrimary" -->
+        <Button
+            android:id="@+id/btn_Listar_Egreso"
+            android:drawableLeft="@drawable/egress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_configuracion"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:text="@string/Listar_Egreso"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:onClick="Listar_Egreso"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_Actualizar_Egreso"
+            android:drawableLeft="@drawable/egress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_configuracion"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:text="@string/Actualizar_Egresos"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:onClick="Actulizar_Egreso"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_Eliminar_Egreso"
+            android:drawableLeft="@drawable/egress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_configuracion"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:text="@string/Eliminar_Egresos"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:onClick="Eliminar_Egreso"
+            >
+        </Button>
+
+        <TextView />
+
+        <Button
+            android:id="@+id/btn_Listar_Ingresos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Listar_Ingresos"
+            android:drawableLeft="@drawable/income"
+            android:padding="@dimen/padding_configuracion"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:onClick="Listar_Ingreso"
+            />
+
+        <Button
+            android:id="@+id/btn_Actualizar_Ingresos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Actualizar_Ingresos"
+            android:drawableLeft="@drawable/income"
+            android:padding="@dimen/padding_configuracion"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:onClick="Actualiza_Ingresos"
+            />
+
+        <Button
+            android:id="@+id/btn_Eliminar_Ingresos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Eliminar_Ingresos"
+            android:drawableLeft="@drawable/income"
+            android:padding="@dimen/padding_configuracion"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:onClick="Eliminar_Ingresos"
+            />
+
+        <TextView />
+
+        <Button
+            android:id="@+id/btn_balance_mensual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Balance_Mensual"
+            android:drawableLeft="@drawable/balance"
+            android:padding="@dimen/padding_configuracion"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:onClick="Balance_Mensual"
+            />
+
+        <TextView />
+
+        <Button
+            android:id="@+id/btn_Listar_Log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Listar_Logs"
+            android:drawableLeft="@drawable/configuracion"
+            android:padding="@dimen/padding_configuracion"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:layout_marginRight="@dimen/layout_marginRight"
+            android:background="@drawable/botones"
+            android:textSize="@dimen/textSize_inicio"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:onClick="ListarLog"
+            />
+
+            <Button
+                android:id="@+id/btn_Sobre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Sobre"
+                android:drawableLeft="@drawable/configuracion"
+                android:padding="@dimen/padding_configuracion"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:layout_marginRight="@dimen/layout_marginRight"
+                android:background="@drawable/botones"
+                android:textSize="@dimen/textSize_inicio"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:onClick="Sobre"
+                />
+
+    </GridLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".About"
+    >
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SOBRE ESTE APLICACIÓN"
+            android:textAlignment="center"
+            android:textStyle="bold"
+
+            android:textSize="30dp"
+            android:layout_margin="50dp"
+            android:id="@+id/tv_sobre"
+            />
+
+    <TextView
+        android:id="@+id/tv_Oscar"
+        android:layout_above="@id/tv_sobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oscar Eduardo Ortiz Pinzón"
+        android:textSize="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="140dp"
+        android:textAlignment="center"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="oscardo.ortiz@gmail.com"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="250dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto"
+        android:text="version: "
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="350dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorFondo"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reinicio"
+        android:textSize="15dp"
+        android:text="VOLVER A LA CONFIGURACIÓN INICIAL"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/bones"
+        android:background="@drawable/botones"
+        android:layout_marginTop="420dp"
+        android:onClick="Elimina_Configuracion"
+        />
+
+</RelativeLayout>
